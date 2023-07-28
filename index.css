@@ -1,0 +1,179 @@
+*,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;          
+}
+body
+{
+            margin: 0 100px;
+            background-color: #ffeae0;
+            background-image:url('https://c.files.bbci.co.uk/EFE0/production/_117380416_gettyimages-1230412922.jpg');
+            background-repeat: no-repeat;
+      background-position: center;
+      background-size: 120%;
+}
+/**********MENU***********/
+.nav
+{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+}
+.nav .logo h1
+{
+            font-weight: 600;
+            font-family: sans-serif;
+            color: rgb(27, 6, 215);
+            font-size: 5pc;
+            margin-top: 10px;
+}
+.nav .logo b
+{
+color: #ff511c;
+}
+.info p{
+      font-size: 1pc;
+}
+.info h2{
+      color: rgb(27, 6, 215);
+     /* color:  #ff511c; */
+}
+.info .h2 .c{
+      color: #ff511c;
+}
+.nav ul
+{
+            display: flex;
+            list-style: none;
+}
+.nav ul li
+{
+            margin-right: 50px;
+}
+.nav ul li a
+{
+            text-decoration: wavy;
+            color: black;
+            font-weight: 500px;
+            font: 17px sans-serif;
+
+}
+/* ***********ACTIVE*************/
+.nav ul .active::after
+{
+      display: flex;
+      width: 50%;
+      height: 3px;
+      content: '';
+      position: relative;
+      margin-left: 10px;  
+      background-color: #ff511c;    
+}
+/* ***********INPUT************** */
+input
+{
+      padding: 10px 20px;
+      cursor: pointer;  
+      font-weight: 600;   
+}
+.singin{
+            background: transparent;
+            border: none;
+            
+}
+.signup{
+            background-color: #ff511c;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+}
+/* //*******CONTENT******/
+.content{
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 30px;
+            align-items: center;
+            margin-top:  120px; ;
+            justify-content:space-between;
+            width: 100%;
+}
+/* ***********CONTENT //TEXT//**************** */
+/* ********************left Side/******************* */
+.content .content-left{
+            display:block;
+            width: 100%;
+
+}
+.content .content-left.info{
+            display: flex;
+            max-width: 100%;
+            flex-direction: column;
+
+}
+.content .content-left .info h2{
+            font-size: 60px;
+            font-family: sans-serif;
+            margin-bottom: 50px;
+          
+            
+}
+.content .content-left .info p{
+            font-size: 20px;
+            line-height: 2pc;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+}
+/* Content Button */
+.content .content-left button{
+ padding: 10px 23px;
+ background-color: #ff511c;
+ color: white;
+ border-radius: 5px;  
+ border: none;         
+cursor: pointer;
+}
+/* *******###CONTENT IMAGE///*****/
+/* RIGHT SIDE */
+.content .content-right img{
+            width: 400px;
+            height: auto;
+            position: relative;
+            animation: rotate 20s linear infinite ;
+            user-select: none;
+}
+/* Content */
+/* ******ANIMATION****** */
+@keyframes rotate{
+            0%{
+                        transform: rotate(0deg);
+
+            }
+            100%{
+                        transform: rotate(360deg);
+            }
+
+}
+button {
+      margin: 12px;
+      height: 50px;
+      width: 120px;
+      border-radius: 10px;
+      background: #ED0800;
+      justify-content: center;
+      align-items: center;
+      box-shadow: -5px -5px 15px #af685f, 5px 5px 15px #222, inset 5px 5px 10px  #e1e8eb, inset -5px -5px 10px #222;
+      font-family: 'Damion', cursive;
+      border: none;
+      font-size: 15px;
+      color: white;
+      transition: 500ms;
+    }
+    
+    button:hover {
+      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+      color: #d6d6d6;
+      transition: 500ms;
+    }

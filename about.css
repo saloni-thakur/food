@@ -1,0 +1,104 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image : url('https://us.123rf.com/450wm/shuttertop/shuttertop1702/shuttertop170200195/73004258-abstract-blur-of-restaurant-with-blurred-light-bokeh-background.jpg?ver=6') ;
+            background-repeat:repeat-x;
+            /* background-color: transparent; */
+            
+        }
+        
+        header {
+             /* Replace with desired background color or image */
+            padding: 10px;
+        }
+        
+        header .logo {
+            display: flex;
+            /* align-items: center; */
+        }
+        
+        header .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .slider {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        
+        .slide {
+            position: relative;
+            width: 300px;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .description {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        
+        .slide:hover img {
+            transform: scale(1.1);
+        }
+        
+        .slide:hover .description {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        footer {
+           /* Replace with desired background color or image */
+            text-align: center;
+            padding: 10px;
+            color: #000000;
+            /* margin-bottom: 10px; */
+            /* margin-bottom: 18.4%; */
+        }
+        
+        .code-style {
+            background-color: #d29766;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px  #ff511c;
+            width: 90%;
+            margin: 50px auto;
+            transition: background-color 0.3s;
+            font-size: 20px;
+            height: 120px;
+        }
+        
+        .code-style p {
+            margin: 0;
+        }
+        
+        .code-style:hover {
+            background-color: #bc8787;
+        }        
+        
